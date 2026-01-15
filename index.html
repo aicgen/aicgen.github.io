@@ -1393,7 +1393,17 @@ title: aicgen
     steps.forEach((step, idx) => {
       setTimeout(() => {
         const line = document.createElement("div");
-        line.className = `${step.color || "text-gray-300"} mb-1`;
+        line.style.whiteSpace = "pre";
+        
+        // Check if this is the "for better coding" line (from the step definition or content)
+        // Since we can't easily change the step definition without re-replacing the whole array,
+        // we'll check for the specific text content here.
+        if (step.text.includes("for better coding")) {
+           line.className = `${step.color || "text-gray-300"} mb-1 font-mono text-xs scale-90 origin-left`;
+        } else {
+           line.className = `${step.color || "text-gray-300"} mb-1 font-mono`;
+        }
+        
         line.textContent = step.text;
         terminalContent.appendChild(line);
 
@@ -1403,6 +1413,10 @@ title: aicgen
             "animate-pulse inline-block w-2 h-4 bg-primary align-middle ml-1";
           terminalContent.appendChild(cursor);
         }
+        
+        // Auto-scroll to bottom
+        terminalContent.scrollTop = terminalContent.scrollHeight;
+        
       }, step.delay);
     });
   }
