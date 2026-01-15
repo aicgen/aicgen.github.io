@@ -702,11 +702,11 @@ title: aicgen
             <div
               class="bg-white/5 rounded px-3 py-1 mb-4 text-xs font-mono text-primary/80 border border-white/5"
             >
-              aicgen init
+              aicgen configure
             </div>
-            <h3 class="text-xl font-semibold mb-2 text-white">Run Init</h3>
+            <h3 class="text-xl font-semibold mb-2 text-white">Run Configure</h3>
             <p class="text-textGray max-w-xs">
-              Navigate to your project root and run the initialization command.
+              Navigate to your project root and run the configuration command.
             </p>
           </div>
 
@@ -1042,10 +1042,10 @@ title: aicgen
                   </div>
                   <code
                     class="text-secondary font-mono text-sm sm:text-base block"
-                    >npx @aicgen/aicgen init</code
+                    >npx @aicgen/aicgen configure</code
                   >
                   <button
-                    onclick="copyToClipboard('npx @aicgen/aicgen init')"
+                    onclick="copyToClipboard('npx @aicgen/aicgen configure')"
                     class="absolute right-4 top-4 p-2 rounded hover:bg-white/10 text-textGray hover:text-white transition-colors"
                     aria-label="Copy command"
                   >
@@ -1181,7 +1181,7 @@ title: aicgen
               <span
                 class="font-mono text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
               >
-                aicgen init
+                aicgen configure
               </span>
             </div>
           </div>
@@ -1355,94 +1355,37 @@ title: aicgen
 
   // Terminal animation
   const terminalContent = document.getElementById("terminal-content");
+
   const steps = [
-    { text: "$ aicgen init", delay: 300, color: "text-white" },
+    { text: "$ aicgen configure", delay: 300, color: "text-white" },
     { text: "", delay: 400, color: "" },
-    { text: "✔ Project detected", delay: 1200, color: "text-green-400" },
+    { text: "      (●)", delay: 800, color: "text-white" },
+    { text: "         ╲ ", delay: 850, color: "text-white" },
+    { text: "      (●) ───▶  ╔═════════════════════════════╗", delay: 900, color: "text-white" },
+    { text: "         ╱      ║     AI CONFIG GENERATOR     ║", delay: 950, color: "text-white" },
+    { text: "      (●)       ║      for better coding      ║", delay: 1000, color: "text-white" },
+    { text: "                ╚═════════════════════════════╝", delay: 1050, color: "text-white" },
+    { text: "", delay: 1100, color: "" },
+    { text: "                      v1.0.2 · MIT License", delay: 1200, color: "text-gray-500" },
     { text: "", delay: 1300, color: "" },
-    {
-      text: "┌─ 📁 Project Detection ──────────────────┐",
-      delay: 1400,
-      color: "text-gray-500",
-    },
-    {
-      text: "│ Name      my-api-project               │",
-      delay: 1500,
-      color: "text-gray-400",
-    },
-    {
-      text: "│ Language  typescript                   │",
-      delay: 1600,
-      color: "text-gray-400",
-    },
-    {
-      text: "└──────────────────────────────────────────┘",
-      delay: 1700,
-      color: "text-gray-500",
-    },
-    { text: "", delay: 1800, color: "" },
-    {
-      text: "? Use detected language: typescript? (Y/n) Y",
-      delay: 2500,
-      color: "text-cyan-400",
-    },
-    {
-      text: "⠋ Running AI project analysis...",
-      delay: 2800,
-      color: "text-blue-400",
-    },
-    { text: "✔ AI Analysis complete", delay: 3500, color: "text-green-400" },
-    {
-      text: "? What type of project is this? › API / Backend",
-      delay: 3800,
-      color: "text-cyan-400",
-    },
-    {
-      text: "? Which AI assistant? › Claude Code",
-      delay: 4200,
-      color: "text-cyan-400",
-    },
-    {
-      text: "? Setup type? › Quick Setup",
-      delay: 4500,
-      color: "text-cyan-400",
-    },
-    {
-      text: "? Architecture pattern? › Modular Monolith",
-      delay: 4800,
-      color: "text-cyan-400",
-    },
-    {
-      text: "? Data storage? › SQL Database",
-      delay: 5200,
-      color: "text-cyan-400",
-    },
-    {
-      text: "? Instruction detail level? › Standard (68 guidelines)",
-      delay: 6500,
-      color: "text-cyan-400",
-    },
-    {
-      text: "? Proceed with generation? › Yes, generate configuration",
-      delay: 7200,
-      color: "text-cyan-400",
-    },
-    { text: "", delay: 7300, color: "" },
-    { text: "✔ Configuration generated", delay: 8000, color: "text-green-400" },
-    { text: "", delay: 8100, color: "" },
-    { text: "✅ Generated files:", delay: 8200, color: "text-green-400" },
-    { text: "   CLAUDE.md", delay: 8400, color: "text-gray-400" },
-    { text: "   .claude/settings.json", delay: 8500, color: "text-gray-400" },
-    {
-      text: "   .claude/guidelines/language.md",
-      delay: 8600,
-      color: "text-gray-400",
-    },
-    {
-      text: "   .claude/guidelines/architecture.md",
-      delay: 8700,
-      color: "text-gray-400",
-    },
+    { text: "✔ Project detected", delay: 1800, color: "text-green-400" },
+    { text: "✔ Use AI to analyze architecture and suggest config? (Y/n) Yes", delay: 2500, color: "text-green-400" },
+    { text: "✔ Select AI Provider: Gemini (Google)", delay: 3000, color: "text-green-400" },
+    { text: "✔ Select Credential Source: Stored Credential", delay: 3500, color: "text-green-400" },
+    { text: "✔ Select analysis depth: Tier 3 - Deep", delay: 4000, color: "text-green-400" },
+    { text: "⠙ Consulting AI Architect... [INFO] Analysis started", delay: 4200, color: "text-cyan-400" },
+    { text: "  { \"provider\": \"gemini\", \"fileCount\": 222 }", delay: 4500, color: "text-gray-500" },
+    { text: "✔ AI Analysis Complete", delay: 5500, color: "text-green-400" },
+    { text: "", delay: 5600, color: "" },
+    { text: "╭─────────────────── 🤖 AI Suggestions ────────────────────╮", delay: 5700, color: "text-white" },
+    { text: "│  Language:           typescript                          │", delay: 5800, color: "text-white" },
+    { text: "│  Architecture:       event-driven (80%)                  │", delay: 5900, color: "text-white" },
+    { text: "│  Instruction Level:  standard                            │", delay: 6000, color: "text-white" },
+    { text: "╰──────────────────────────────────────────────────────────╯", delay: 6100, color: "text-white" },
+    { text: "", delay: 6200, color: "" },
+    { text: "✔ Apply AI suggestions? (Y/n) Yes", delay: 7000, color: "text-green-400" },
+    { text: "✔ Configuration Generated!", delay: 7500, color: "text-green-400" },
+    { text: "Done in 17.33s.", delay: 8000, color: "text-gray-500" }
   ];
 
   function runTerminalAnimation() {
