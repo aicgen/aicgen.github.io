@@ -1,9 +1,29 @@
+# aicgen Site
+
+Marketing and documentation site for the aicgen 1.2.0 release.
+
+## Release Stats
+
+| Metric | Count |
+|--------|-------|
+| Guidelines | 99 |
+| Categories | 12 |
+| Languages | 12 |
+| Assistants | 4 |
+| SDLC workflows | 6 |
+| Profile levels | `basic`, `standard`, `full` |
+
 ## Run Locally
 
-**Prerequisites:**  Node.js
+```bash
+bun install
+bun run dev
+```
 
+The static GitHub Pages entry is `index.html`. Shared release values for the React/Vite components live in `config/site-data.ts`.
 
-1. Install dependencies:
-   `npm install`
-2. Run the app:
-   `npm run dev`
+## Build
+
+```bash
+bun run build
+```

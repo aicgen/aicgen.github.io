@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Copy, Check, Download, Terminal } from 'lucide-react';
 import { InstallPlatform } from '../types';
+import { SITE_DATA } from '../config/site-data';
 
 export const Installation: React.FC = () => {
   const [activeTab, setActiveTab] = useState<InstallPlatform>('npm');
@@ -61,7 +62,7 @@ export const Installation: React.FC = () => {
         return (
           <div className="text-center py-6">
              <a 
-              href="https://github.com/lpsandaruwan/aicgen/releases/latest"
+              href={`${SITE_DATA.github.url}/releases/latest`}
               className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-secondary text-white font-medium hover:opacity-90 transition-opacity shadow-lg shadow-primary/25"
             >
               <Download className="mr-2" size={20} />
@@ -74,13 +75,13 @@ export const Installation: React.FC = () => {
         return (
             <div className="text-center py-6">
              <a 
-              href="https://github.com/lpsandaruwan/aicgen/releases/latest"
+              href={`${SITE_DATA.github.url}/releases/latest`}
               className="inline-flex items-center px-6 py-3 rounded-lg bg-white text-background font-medium hover:bg-gray-100 transition-colors"
             >
               <Download className="mr-2" size={20} />
-              Download macOS Package (.pkg)
+	              Download macOS tarball
             </a>
-            <p className="mt-4 text-textGray text-sm">Standard macOS installer signed & notarized.</p>
+	            <p className="mt-4 text-textGray text-sm">Homebrew is the recommended macOS install path.</p>
           </div>
         );
       case 'linux':
@@ -99,7 +100,7 @@ export const Installation: React.FC = () => {
                 </div>
              </div>
              <div className="text-center mt-4">
-                <a href="https://github.com/lpsandaruwan/aicgen/releases/latest" className="text-primary hover:text-secondary underline underline-offset-4 text-sm">
+	                <a href={`${SITE_DATA.github.url}/releases/latest`} className="text-primary hover:text-secondary underline underline-offset-4 text-sm">
                     View all Linux releases on GitHub
                 </a>
              </div>

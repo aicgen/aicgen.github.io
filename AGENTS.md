@@ -101,8 +101,8 @@ npm run build
 See tool-specific instruction files for detailed code style guidelines:
 - Claude Code: `CLAUDE.md`
 - GitHub Copilot: `.github/copilot-instructions.md`
-- Gemini: `.gemini/instructions.md`
 - Antigravity: `.agent/rules/instructions.md`
+- Codex: `AGENTS.md`
 
 ## Testing
 

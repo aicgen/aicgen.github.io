@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SITE_DATA } from '../config/site-data';
 
 export const Terminal: React.FC = () => {
   const [lines, setLines] = useState<string[]>([]);
@@ -6,13 +7,15 @@ export const Terminal: React.FC = () => {
     { text: "> navigate to project...", delay: 500 },
     { text: "> aicgen init", delay: 1500 },
     { text: "✔  Analyzing project structure...", delay: 2500, color: "text-blue-400" },
-    { text: "? Select AI Assistant › Claude Code", delay: 3500, color: "text-primary" },
-    { text: "? Choose Architecture › Modular Monolith", delay: 4500, color: "text-primary" },
-    { text: "✔  Configuration generated successfully!", delay: 5500, color: "text-success" },
-    { text: "  + .claude/settings.json", delay: 6000, color: "text-textGray" },
-    { text: "  + .claude/guidelines/architecture.md", delay: 6200, color: "text-textGray" },
-    { text: "  + .claude/agents/checker.md", delay: 6400, color: "text-textGray" },
-    { text: "> Ready to code.", delay: 7000, color: "text-white" }
+    { text: `> aicgen v${SITE_DATA.version}`, delay: 2200, color: "text-textGray" },
+    { text: "? Select AI Assistant › Antigravity", delay: 3500, color: "text-primary" },
+    { text: "? Profile Level › full", delay: 4300, color: "text-primary" },
+    { text: "? Choose Architecture › Modular Monolith", delay: 5100, color: "text-primary" },
+    { text: "✔  Configuration generated successfully!", delay: 5900, color: "text-success" },
+    { text: "  + .agent/rules/instructions.md", delay: 6400, color: "text-textGray" },
+    { text: "  + .agent/workflows/check.md", delay: 6600, color: "text-textGray" },
+    { text: "  + AGENTS.md", delay: 6800, color: "text-textGray" },
+    { text: "> Ready to code.", delay: 7400, color: "text-white" }
   ];
 
   useEffect(() => {

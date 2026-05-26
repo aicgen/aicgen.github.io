@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Github } from 'lucide-react';
 import { Logo } from './Logo';
+import { SITE_DATA } from '../config/site-data';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ export const Navbar: React.FC = () => {
                 </a>
               ))}
               <a
-                href="https://github.com/lpsandaruwan/aicgen"
+                href={SITE_DATA.github.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-textGray hover:text-white transition-colors"
@@ -71,7 +72,7 @@ export const Navbar: React.FC = () => {
               </a>
             ))}
             <a
-              href="https://github.com/lpsandaruwan/aicgen"
+              href={SITE_DATA.github.url}
               target="_blank"
               rel="noopener noreferrer"
               className="text-textGray hover:text-white block px-3 py-2 rounded-md text-base font-medium"

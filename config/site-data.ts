@@ -6,13 +6,13 @@
  */
 
 export const SITE_DATA = {
-  version: '1.1.0',
+  version: '1.2.0',
 
   stats: {
     guidelines: 99,
     categories: 12,
     languages: 12,
-    assistants: 5,
+    assistants: 4,
     workflows: 6,
   },
 
@@ -34,9 +34,8 @@ export const SITE_DATA = {
   assistants: [
     'Claude Code',
     'GitHub Copilot',
-    'Gemini',
-    'Codex',
     'Antigravity',
+    'Codex',
   ],
 
   categories: [
@@ -68,11 +67,11 @@ export const SITE_DATA = {
   features: {
     sdlcWorkflows: {
       title: 'SDLC Workflow Commands',
-      description: 'Six slash commands (/spec → /research → /plan → /build → /check → /ship) injected into every config. Structured delivery from requirements to PR, with web research and infrastructure preference built in.',
+      description: 'Six lifecycle commands (/spec → /research → /plan → /build → /check → /ship) guide requirements, planning, validation, and shipping. /check owns test validation instead of generated test hooks.',
     },
     multiAssistant: {
       title: 'Multi-Assistant Support',
-      description: 'Supports Claude Code, GitHub Copilot, Gemini, Antigravity, and Codex out of the box.',
+      description: 'Supports Claude Code, GitHub Copilot, Antigravity, and Codex out of the box. Gemini CLI target generation is removed; use Antigravity for Google-side agentic profiles.',
     },
     guidelines: {
       title: '99 Guidelines',
@@ -83,8 +82,8 @@ export const SITE_DATA = {
       description: 'Professional setup wizard with smart defaults, back navigation, and auto-detection.',
     },
     hooksSubAgents: {
-      title: 'Hooks & Sub-Agents',
-      description: 'Auto-generates verification agents and hooks specifically for Claude Code workflows.',
+      title: 'Agentic Profiles',
+      description: 'Three clear levels: basic instructions, standard workflows, and full agentic setup with skills, subagents, guardrail hooks, plugins, and MCP templates.',
     },
     architectureAware: {
       title: 'Architecture Aware',
@@ -92,13 +91,13 @@ export const SITE_DATA = {
     },
     zeroDependencies: {
       title: 'Zero Dependencies',
-      description: 'Self-contained binary with all guideline data embedded. Works completely offline.',
+      description: 'Self-contained Bun binary with the latest data submodule docs embedded for offline generation.',
     },
   },
 
   github: {
-    url: 'https://github.com/lpsandaruwan/aicgen',
-    owner: 'lpsandaruwan',
+    url: 'https://github.com/aicgen/aicgen',
+    owner: 'aicgen',
     repo: 'aicgen',
   },
 

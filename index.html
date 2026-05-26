@@ -283,8 +283,9 @@ title: aicgen
           </h1>
 
           <p class="text-lg md:text-xl text-textGray mb-10 leading-relaxed">
-            Makes your project AI-ready in seconds with tailored instruction
-            files for Claude Code, GitHub Copilot, and Gemini.
+            Makes your project AI-ready in seconds with profile-aware
+            instructions for Claude Code, GitHub Copilot, Antigravity, and
+            Codex.
           </p>
 
           <div
@@ -377,10 +378,6 @@ title: aicgen
               Copilot</span
             >
             <span class="font-bold text-xl text-white flex items-center gap-2"
-              ><div class="w-3 h-3 bg-[#4285f4] rounded-full"></div>
-              Gemini</span
-            >
-            <span class="font-bold text-xl text-white flex items-center gap-2"
               ><div class="w-3 h-3 bg-emerald-500 rounded-full"></div>
               Antigravity</span
             >
@@ -407,21 +404,23 @@ title: aicgen
           </h2>
           <p class="text-textGray max-w-2xl mx-auto text-lg">
             Standardize your AI assistant's context with professional-grade
-            configuration files, now with AI-powered analysis.
+            configuration files and profile-aware agentic outputs.
           </p>
         </div>
 
-        <!-- SDLC Workflows — featured full-width card (new in v1.1.0) -->
+        <!-- SDLC Workflows — featured full-width card (new in v1.2.0) -->
         <div class="mb-8 relative group rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-secondary/5 to-transparent p-8 hover:border-primary/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]">
           <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
           <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-8">
             <div class="lg:w-72 shrink-0">
               <div class="inline-flex items-center px-2 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-medium mb-3">
-                New in v1.1.0
+                New in v1.2.0
               </div>
               <h3 class="text-2xl font-bold text-white mb-2">SDLC Workflow Commands</h3>
               <p class="text-textGray text-sm leading-relaxed">
-                6 slash commands injected into every generated config. Structured delivery from requirements to PR — with web research and infrastructure preference built in.
+                6 lifecycle commands guide requirements, planning, validation,
+                and shipping. /check owns test validation instead of generated
+                test hooks.
               </p>
             </div>
             <div class="flex-1">
@@ -534,8 +533,9 @@ title: aicgen
                 Multi-Assistant Support
               </h3>
               <p class="text-textGray leading-relaxed">
-                Supports Claude Code, GitHub Copilot, Gemini, Antigravity, and
-                Codex out of the box.
+                Supports Claude Code, GitHub Copilot, Antigravity, and Codex
+                out of the box. Gemini CLI target generation is removed; use
+                Antigravity for Google-side agentic profiles.
               </p>
             </div>
           </div>
@@ -632,11 +632,13 @@ title: aicgen
                 </svg>
               </div>
               <h3 class="text-xl font-semibold text-white mb-2">
-                Hooks & Sub-Agents
+                Agentic Profiles
               </h3>
               <p class="text-textGray leading-relaxed">
-                Auto-generates verification agents and hooks specifically for
-                Claude Code workflows.
+                Progressively unlocks workflows, prompt files, subagents,
+                basic instructions, standard workflows, and full agentic setup
+                with skills, subagents, guardrail hooks, plugins, and MCP
+                templates.
               </p>
             </div>
           </div>
@@ -746,8 +748,8 @@ title: aicgen
                 Zero Dependencies
               </h3>
               <p class="text-textGray leading-relaxed">
-                Self-contained binary with all guideline data embedded. Works
-                completely offline.
+                Self-contained Bun binary with the latest data submodule docs
+                embedded for offline generation.
               </p>
             </div>
           </div>
@@ -826,12 +828,12 @@ title: aicgen
             <div
               class="bg-white/5 rounded px-3 py-1 mb-4 text-xs font-mono text-primary/80 border border-white/5"
             >
-              Select Assistant › Claude
+              Select Assistant › Antigravity
             </div>
             <h3 class="text-xl font-semibold mb-2 text-white">Configure</h3>
             <p class="text-textGray max-w-xs">
-              Select your AI assistant and architecture pattern via the
-              interactive wizard.
+              Select your coding tool, architecture pattern, and agentic
+              profile level.
             </p>
           </div>
 
@@ -865,8 +867,8 @@ title: aicgen
             </div>
             <h3 class="text-xl font-semibold mb-2 text-white">Generated</h3>
             <p class="text-textGray max-w-xs">
-              Get a tailored set of guidelines, rules, and hook configurations
-              instantly.
+              Get tailored rules, workflows, skills, and guarded advanced
+              outputs instantly.
             </p>
           </div>
         </div>
@@ -886,9 +888,9 @@ title: aicgen
               Crystal Clear <span class="text-primary">Configuration</span>
             </h2>
             <p class="text-textGray mb-8 text-lg">
-              aicgen doesn't just create empty files. It generates a complete,
-              structured, and opinionated configuration ecosystem tailored to
-              your specific architecture and language.
+              aicgen generates a structured profile for each coding tool,
+              matching stable instructions with the workflows, skills, agents,
+              and guarded integrations each tool actually supports.
             </p>
 
             <ul class="space-y-4 mb-8">
@@ -908,20 +910,20 @@ title: aicgen
                 <div
                   class="h-2 w-2 rounded-full bg-success shadow-[0_0_8px_rgba(16,185,129,0.5)]"
                 ></div>
-                <span>Automated agent instructions</span>
+                <span>Profile-gated agentic surfaces</span>
               </li>
               <li class="flex items-center space-x-3 text-gray-300">
                 <div
                   class="h-2 w-2 rounded-full bg-success shadow-[0_0_8px_rgba(16,185,129,0.5)]"
                 ></div>
-                <span>Consistent coding standards</span>
+                <span>Validation through /check, not test hooks</span>
               </li>
             </ul>
           </div>
 
           <div class="bg-card border border-white/10 rounded-xl overflow-hidden shadow-2xl">
             <!-- Tab buttons -->
-            <div class="flex border-b border-white/5 bg-[#0f172a]/50">
+            <div class="flex border-b border-white/5 bg-[#0f172a]/50 overflow-x-auto">
               <button data-preview-tab="claude"
                 class="preview-tab px-4 py-3 text-sm font-medium text-white border-b-2 border-primary cursor-pointer">
                 Claude Code
@@ -930,9 +932,13 @@ title: aicgen
                 class="preview-tab px-4 py-3 text-sm font-medium text-textGray hover:text-white cursor-pointer">
                 GitHub Copilot
               </button>
-              <button data-preview-tab="gemini"
+              <button data-preview-tab="antigravity"
                 class="preview-tab px-4 py-3 text-sm font-medium text-textGray hover:text-white cursor-pointer">
-                Gemini
+                Antigravity
+              </button>
+              <button data-preview-tab="codex"
+                class="preview-tab px-4 py-3 text-sm font-medium text-textGray hover:text-white cursor-pointer">
+                Codex
               </button>
             </div>
 
@@ -957,6 +963,7 @@ title: aicgen
                       <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>
                     </svg>
                     <span>settings.json</span>
+                    <span class="text-xs text-primary/60 font-mono">guardrails</span>
                   </div>
                   <div class="flex items-center space-x-2 text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-secondary">
@@ -980,6 +987,15 @@ title: aicgen
                     <div>└── guideline-checker.md</div>
                   </div>
                   <div class="flex items-center space-x-2 text-gray-300 pt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-secondary">
+                      <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
+                    </svg>
+                    <span>skills/</span>
+                  </div>
+                  <div class="pl-6 text-gray-500">
+                    <div>└── review/SKILL.md</div>
+                  </div>
+                  <div class="flex items-center space-x-2 text-gray-300 pt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-primary">
                       <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
                     </svg>
@@ -991,7 +1007,7 @@ title: aicgen
                     <div>├── research.md</div>
                     <div>├── plan.md</div>
                     <div>├── build.md</div>
-                    <div>├── check.md</div>
+                    <div>├── check.md <span class="text-primary/60">tests</span></div>
                     <div>└── ship.md</div>
                   </div>
                 </div>
@@ -1023,29 +1039,48 @@ title: aicgen
               </div>
             </div>
 
-            <!-- Gemini panel -->
-            <div id="preview-panel-gemini" class="preview-panel p-6 font-mono text-sm hidden">
+            <!-- Antigravity panel -->
+            <div id="preview-panel-antigravity" class="preview-panel p-6 font-mono text-sm hidden">
               <div class="flex items-center space-x-2 text-gray-300 mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-secondary">
                   <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
                 </svg>
-                <span>.gemini/</span>
+                <span>.agent/</span>
               </div>
               <div class="pl-4 border-l border-white/10 ml-2 space-y-2">
                 <div class="flex items-center space-x-2 text-primary">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/>
                   </svg>
-                  <span>instructions.md</span>
+                  <span>rules/instructions.md</span>
                 </div>
                 <div class="pl-6 text-gray-500 text-xs space-y-1 mt-2">
-                  <div class="text-gray-400">## Language Guidelines</div>
+                  <div class="text-gray-400">rules/language.md</div>
                   <div class="text-gray-500">TypeScript strict mode, async patterns...</div>
-                  <div class="text-gray-400 mt-1">## Architecture Guidelines</div>
+                  <div class="text-gray-400 mt-1">rules/architecture.md</div>
                   <div class="text-gray-500">Event-driven patterns, SOLID...</div>
-                  <div class="text-gray-400 mt-1">## SDLC Workflows <span class="text-primary/60">new</span></div>
+                  <div class="text-gray-400 mt-1">workflows/check.md <span class="text-primary/60">tests</span></div>
                   <div class="text-gray-500">/spec → /research → /plan → /build...</div>
                 </div>
+              </div>
+            </div>
+
+            <!-- Codex panel -->
+            <div id="preview-panel-codex" class="preview-panel p-6 font-mono text-sm hidden">
+              <div class="flex items-center space-x-2 text-primary mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+                </svg>
+                <span>AGENTS.md</span>
+              </div>
+              <div class="pl-4 border-l border-white/10 ml-2 space-y-2">
+                <div class="text-gray-500">plugins/aicgen-sdlc/skills/</div>
+                <div class="pl-6 text-gray-500 space-y-1">
+                  <div>├── spec/SKILL.md</div>
+                  <div>├── check/SKILL.md</div>
+                  <div>└── ship/SKILL.md</div>
+                </div>
+                <div class="text-gray-500">.codex/hooks.json <span class="text-primary/60">full guardrail</span></div>
               </div>
             </div>
           </div>
@@ -1312,7 +1347,7 @@ title: aicgen
             </div>
           </div>
           <div>
-            <div class="text-4xl font-bold text-secondary mb-2">5</div>
+            <div class="text-4xl font-bold text-secondary mb-2">4</div>
             <div class="text-textGray text-sm uppercase tracking-wider">
               Assistants
             </div>
@@ -1331,10 +1366,10 @@ title: aicgen
             Complexity Levels
           </p>
           <div
-            class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center max-w-4xl mx-auto"
+            class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center max-w-4xl mx-auto"
           >
             <div class="bg-white/5 rounded-lg py-3 px-4 border border-white/10">
-              <div class="text-2xl font-bold text-primary mb-1">25</div>
+              <div class="text-2xl font-bold text-primary mb-1">23</div>
               <div class="text-textGray text-xs uppercase tracking-wider">
                 Basic
               </div>
@@ -1343,12 +1378,6 @@ title: aicgen
               <div class="text-2xl font-bold text-secondary mb-1">83</div>
               <div class="text-textGray text-xs uppercase tracking-wider">
                 Standard
-              </div>
-            </div>
-            <div class="bg-white/5 rounded-lg py-3 px-4 border border-white/10">
-              <div class="text-2xl font-bold text-primary mb-1">99</div>
-              <div class="text-textGray text-xs uppercase tracking-wider">
-                Expert
               </div>
             </div>
             <div class="bg-white/5 rounded-lg py-3 px-4 border border-white/10">
@@ -1430,7 +1459,7 @@ title: aicgen
       >
         <p>© <span id="year"></span> Lahiru Sandaruwan. MIT License.</p>
         <div class="mt-4 md:mt-0 flex space-x-4">
-          <span class="px-2 py-1 rounded bg-white/5 text-xs">v1.1.0</span>
+          <span class="px-2 py-1 rounded bg-white/5 text-xs">v1.2.0</span>
         </div>
       </div>
     </div>
@@ -1472,15 +1501,15 @@ title: aicgen
     { text: "      (●)       ║      for better coding      ║", delay: 1000, color: "text-white" },
     { text: "                ╚═════════════════════════════╝", delay: 1050, color: "text-white" },
     { text: "", delay: 1100, color: "" },
-    { text: "                      v1.1.0 · MIT License", delay: 1200, color: "text-gray-500" },
+    { text: "                      v1.2.0 · MIT License", delay: 1200, color: "text-gray-500" },
     { text: "", delay: 1300, color: "" },
     { text: "✔ Project detected", delay: 1800, color: "text-green-400" },
     { text: "✔ Use AI to analyze architecture and suggest config? (Y/n) Yes", delay: 2500, color: "text-green-400" },
-    { text: "✔ Select AI Provider: Gemini (Google)", delay: 3000, color: "text-green-400" },
+    { text: "✔ Select Assistant Target: Antigravity", delay: 3000, color: "text-green-400" },
     { text: "✔ Select Credential Source: Stored Credential", delay: 3500, color: "text-green-400" },
     { text: "✔ Select analysis depth: Tier 3 - Deep", delay: 4000, color: "text-green-400" },
     { text: "⠙ Consulting AI Architect... [INFO] Analysis started", delay: 4200, color: "text-cyan-400" },
-    { text: "  { \"provider\": \"gemini\", \"fileCount\": 222 }", delay: 4500, color: "text-gray-500" },
+    { text: "  { \"assistant\": \"antigravity\", \"profile\": \"full\" }", delay: 4500, color: "text-gray-500" },
     { text: "✔ AI Analysis Complete", delay: 5500, color: "text-green-400" },
     { text: "", delay: 5600, color: "" },
     { text: "╭─────────────────── 🤖 AI Suggestions ────────────────────╮", delay: 5700, color: "text-white" },

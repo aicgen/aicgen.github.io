@@ -13,14 +13,14 @@ export const HowItWorks: React.FC = () => {
         {
             id: 2,
             title: "Configure",
-            description: "Select your AI assistant and architecture pattern via the interactive wizard.",
+            description: "Select your coding tool, architecture pattern, and agentic profile level.",
             icon: Settings,
             command: "Select Assistant › Claude"
         },
         {
             id: 3,
             title: "Generated",
-            description: "Get a tailored set of guidelines, rules, and hook configurations instantly.",
+            description: "Get tailored rules, workflows, skills, and guarded advanced outputs instantly.",
             icon: FileCheck,
             command: "✔ Config Generated"
         }

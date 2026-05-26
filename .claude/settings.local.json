@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Read(//opt/homebrew/opt/**)",
+      "Read(//opt/homebrew/Cellar/**)",
+      "Bash(brew list *)",
+      "Read(//Users/lpsandaruwan/**)",
+      "Bash(rbenv versions *)",
+      "Bash(rvm list *)",
+      "Bash(asdf list *)",
+      "Bash(/opt/homebrew/opt/ruby/bin/ruby -v)",
+      "Read(//opt/homebrew/bin/**)"
     ]
   }
 }

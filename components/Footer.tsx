@@ -1,6 +1,7 @@
 import React from 'react';
-import { Github, Twitter } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { Logo } from './Logo';
+import { SITE_DATA } from '../config/site-data';
 
 export const Footer: React.FC = () => {
   return (
@@ -20,14 +21,14 @@ export const Footer: React.FC = () => {
 
           <div className="flex space-x-6">
             <a 
-                href="https://github.com/lpsandaruwan/aicgen" 
+                href={SITE_DATA.github.url} 
                 className="text-textGray hover:text-white transition-colors"
                 aria-label="GitHub"
             >
               <Github size={24} />
             </a>
              <a 
-                href="https://www.npmjs.com/package/@aicgen/aicgen" 
+                href={SITE_DATA.npm.url} 
                 className="text-textGray hover:text-white transition-colors font-bold text-xl tracking-tighter"
                 aria-label="NPM"
             >
@@ -39,7 +40,7 @@ export const Footer: React.FC = () => {
         <div className="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-sm text-textGray">
           <p>© {new Date().getFullYear()} Lahiru Sandaruwan. MIT License.</p>
           <div className="mt-4 md:mt-0 flex space-x-4">
-             <span className="px-2 py-1 rounded bg-white/5 text-xs">v1.1.0</span>
+             <span className="px-2 py-1 rounded bg-white/5 text-xs">v{SITE_DATA.version}</span>
           </div>
         </div>
       </div>

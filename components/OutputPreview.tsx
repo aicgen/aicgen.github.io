@@ -14,15 +14,15 @@ export const OutputPreview: React.FC = () => {
               Crystal Clear <span className="text-primary">Configuration</span>
             </h2>
             <p className="text-textGray mb-8 text-lg">
-              aicgen doesn't just create empty files. It generates a complete, structured, and opinionated configuration ecosystem tailored to your specific architecture and language.
+              aicgen generates a structured profile for each coding tool, matching stable instructions with the workflows, skills, agents, and guarded integrations each tool actually supports.
             </p>
             
             <ul className="space-y-4 mb-8">
               {[
                 "Language-specific best practices",
                 "Architecture-aware folder structures",
-                "Automated agent instructions",
-                "Consistent coding standards"
+                "Profile-gated agentic surfaces",
+                "Validation through /check, not test hooks"
               ].map((item, i) => (
                 <li key={i} className="flex items-center space-x-3 text-gray-300">
                   <div className="h-2 w-2 rounded-full bg-success shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
@@ -34,10 +34,11 @@ export const OutputPreview: React.FC = () => {
 
           {/* Visual Representation of Output */}
           <div className="bg-card border border-white/10 rounded-xl overflow-hidden shadow-2xl">
-            <div className="flex border-b border-white/5 bg-[#0f172a]/50">
+            <div className="flex border-b border-white/5 bg-[#0f172a]/50 overflow-x-auto">
               <div className="px-4 py-3 text-sm font-medium text-white border-b-2 border-primary">Claude Code</div>
               <div className="px-4 py-3 text-sm font-medium text-textGray hover:text-white cursor-pointer">GitHub Copilot</div>
-              <div className="px-4 py-3 text-sm font-medium text-textGray hover:text-white cursor-pointer">Gemini</div>
+              <div className="px-4 py-3 text-sm font-medium text-textGray hover:text-white cursor-pointer">Antigravity</div>
+              <div className="px-4 py-3 text-sm font-medium text-textGray hover:text-white cursor-pointer">Codex</div>
             </div>
             
             <div className="p-6 font-mono text-sm">
@@ -51,9 +52,10 @@ export const OutputPreview: React.FC = () => {
                         <span>.claude/</span>
                     </div>
                     <div className="pl-6 space-y-2">
-                         <div className="flex items-center space-x-2 text-gray-400">
+                        <div className="flex items-center space-x-2 text-gray-400">
                             <FileJson size={16} />
                             <span>settings.json</span>
+                            <span className="text-xs text-primary/60 font-mono">guardrails</span>
                         </div>
                         <div className="flex items-center space-x-2 text-gray-300">
                             <Folder size={16} className="text-secondary" />
@@ -73,6 +75,13 @@ export const OutputPreview: React.FC = () => {
                              <div>└── guideline-checker.md</div>
                         </div>
                         <div className="flex items-center space-x-2 text-gray-300 pt-1">
+                            <Folder size={16} className="text-secondary" />
+                            <span>skills/</span>
+                        </div>
+                        <div className="pl-6 text-gray-500">
+                             <div>└── review/SKILL.md</div>
+                        </div>
+                        <div className="flex items-center space-x-2 text-gray-300 pt-1">
                             <Folder size={16} className="text-primary" />
                             <span>commands/</span>
                             <span className="text-xs text-primary/60 font-mono">new</span>
@@ -82,7 +91,7 @@ export const OutputPreview: React.FC = () => {
                             <div>├── research.md</div>
                             <div>├── plan.md</div>
                             <div>├── build.md</div>
-                            <div>├── check.md</div>
+                            <div>├── check.md <span className="text-primary/60">tests</span></div>
                             <div>└── ship.md</div>
                         </div>
                     </div>
