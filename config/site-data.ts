@@ -6,10 +6,10 @@
  */
 
 export const SITE_DATA = {
-  version: '1.2.0',
+  version: '2.0.0',
 
   stats: {
-    guidelines: 99,
+    guidelines: 116,
     categories: 12,
     languages: 12,
     assistants: 4,
@@ -74,7 +74,7 @@ export const SITE_DATA = {
       description: 'Supports Claude Code, GitHub Copilot, Antigravity, and Codex out of the box. Gemini CLI target generation is removed; use Antigravity for Google-side agentic profiles.',
     },
     guidelines: {
-      title: '99 Guidelines',
+      title: '116 Guidelines',
       description: 'Comprehensive coverage across 12 categories including Security, API Design, and Performance.',
     },
     interactiveCLI: {
