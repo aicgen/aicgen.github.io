@@ -1,12 +1,12 @@
 # aicgen Site
 
-Marketing and documentation site for the aicgen 1.2.0 release.
+Marketing and documentation site for the aicgen 2.0.0 release.
 
 ## Release Stats
 
 | Metric | Count |
 |--------|-------|
-| Guidelines | 99 |
+| Guidelines | 116 |
 | Categories | 12 |
 | Languages | 12 |
 | Assistants | 4 |
